@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.name-email {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+button {
+  background-color: deepskyblue;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid dodgerblue;
+  border-radius: 5px;
+}
+
+.form-container {
+  width: 700px;
+  height: 450px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+p {
+  color: dimgrey;
+}
+
+.name-email input {
+  width: 315px;
+  padding: 10px;
+  border: 1px solid darkgrey;
+}
+
+.subject input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid darkgrey;
+}
+
+.message textarea {
+  width: 100%;
+  padding: 10px;
+  height: 230px;
+  margin-top: 10px;
+  border: 1px solid darkgrey;
+}
