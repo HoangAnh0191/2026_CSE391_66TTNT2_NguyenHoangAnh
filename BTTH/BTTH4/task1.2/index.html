@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 1.2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="box">
+      <div>
+        <h2>BẢNG ĐIỂM SINH VIÊN</h2>
+      </div>
+      <div>
+        <label for="name">Họ và tên:</label>
+        <input
+          type="text"
+          id="name"
+          class="input"
+          placeholder="Nhập họ và tên"
+        />
+      </div>
+
+      <div>
+        <label for="grade">Điểm:</label>
+        <input
+          type="number"
+          id="grade"
+          class="input"
+          placeholder="Nhập điểm (0-10)"
+        />
+      </div>
+
+      <button id="button">Thêm</button>
+      <div id="searchContainer">
+        <label for="search">Tìm kiếm sinh viên</label>
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Nhập tên sinh viên"
+        />
+        <button id="searchBtn">Tìm kiếm</button>
+        <label for="select">Xếp loại</label>
+        <select name="select" id="select">
+          <option value="all">Tất cả</option>
+          <option value="Giỏi">Giỏi</option>
+          <option value="Khá">Khá</option>
+          <option value="Trung bình">Trung bình</option>
+          <option value="Yếu">Yếu</option>
+        </select>
+      </div>
+      <div id="alert">
+        <p style="color: red">Không tìm thấy sinh viên</p>
+      </div>
+      <div id="table">
+        <table border="1">
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Họ tên</th>
+              <th id="gradeHeader" style="cursor: pointer">Điểm</th>
+              <th>Xếp loại</th>
+              <th>Thao tác</th>
+            </tr>
+          </thead>
+
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+
+      <div id="summary"></div>
+      <div id="average"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 40px;
+}
+
+.box {
+  width: 660px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #ccc;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #999;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+input:focus {
+  outline: 1px solid #000;
+}
+
+/* Nút Thêm */
+#button {
+  width: 100%;
+  padding: 8px;
+  background: #000;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#button:hover {
+  background: #333;
+}
+
+/* Khu vực search */
+#searchContainer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+  align-items: end;
+  margin-bottom: 12px;
+}
+
+#searchContainer label[for="search"] {
+  grid-column: 1 / -1;
+}
+
+#search {
+  margin-bottom: 0;
+}
+
+#searchBtn {
+  padding: 7px 14px;
+  background: #fff;
+  border: 1px solid #999;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+#searchBtn:hover {
+  background: #eee;
+}
+
+#searchContainer label[for="select"] {
+  grid-column: 1 / -1;
+}
+
+#select {
+  grid-column: 1 / -1;
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #999;
+  font-size: 14px;
+  background: #fff;
+}
+
+/* Alert */
+#alert {
+  margin-bottom: 8px;
+}
+
+#alert p {
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Bảng */
+#table {
+  margin-bottom: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background: #eee;
+}
+
+td button {
+  padding: 3px 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Tổng kết */
+#summary,
+#average {
+  font-size: 13px;
+  color: #555;
+  margin-top: 4px;
+}
