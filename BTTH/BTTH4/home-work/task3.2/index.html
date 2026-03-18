@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+    <div id="step-text">Bước 1/3</div>
+
+    <div id="step1" class="step">
+      <h2>Thông Tin Cá Nhân</h2>
+      <form id="personal-infor">
+        <div class="field">
+          <label for="fullname">Họ và tên</label>
+          <input type="text" id="fullname" placeholder="Nguyễn Văn A" />
+          <span class="error" id="err-fullname"></span>
+        </div>
+
+        <div class="field">
+          <label for="birthday">Ngày sinh</label>
+          <input type="date" id="birthday" />
+          <span class="error" id="err-birthday"></span>
+        </div>
+
+        <div class="field">
+          <label>Giới tính</label>
+          <div class="radio-group">
+            <label><input type="radio" name="gender" value="male" /> Nam</label>
+            <label
+              ><input type="radio" name="gender" value="female" /> Nữ</label
+            >
+            <label
+              ><input type="radio" name="gender" value="other" /> Khác</label
+            >
+          </div>
+          <span class="error" id="err-gender"></span>
+        </div>
+      </form>
+      <button type="btn-next" class="btn-next">Tiếp theo →</button>
+    </div>
+
+    <div id="step2" class="step" style="display: none">
+      <h2>Thông Tin Tài Khoản</h2>
+      <form action="" id="account-infor">
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="name@gmail.com" />
+          <span class="error" id="err-email"></span>
+        </div>
+
+        <div class="field" id="parent">
+          <label for="password">Mật khẩu</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Tối thiểu 8 ký tự"
+          />
+          <button id="toggle" type="button">Hiện</button>
+          <span class="error" id="err-password"></span>
+          <span id="strenght"></span>
+        </div>
+
+        <div class="field">
+          <label for="confirm">Xác nhận mật khẩu</label>
+          <input type="password" id="confirm" placeholder="Nhập lại mật khẩu" />
+          <span class="error" id="err-confirm"></span>
+        </div>
+      </form>
+      <div id="btn-group">
+        <button type="btn-back" class="btn-back">← Quay lại</button>
+        <button type="btn-next" class="btn-next">Tiếp theo →</button>
+      </div>
+    </div>
+
+    <div id="step3" class="step" style="display: none">
+      <h2>Xác Nhận Thông Tin</h2>
+      <div id="infor-confirm">
+        <div class="confirm-item">
+          <label>Họ và tên:</label>
+          <p id="confirm-fullname"></p>
+        </div>
+        <div class="confirm-item">
+          <label>Ngày sinh:</label>
+          <p id="confirm-birthday"></p>
+        </div>
+        <div class="confirm-item">
+          <label>Giới tính:</label>
+          <p id="confirm-gender"></p>
+        </div>
+        <div class="confirm-item">
+          <label>Email:</label>
+          <p id="confirm-email"></p>
+        </div>
+      </div>
+      <div id="btn-group">
+        <button type="btn-back" class="btn-back">← Quay lại</button>
+        <button type="btn-submit" class="btn-submit">Hoàn tất</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
